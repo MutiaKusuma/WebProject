@@ -35,6 +35,21 @@
 }
 
 
+.cv .banner-section,
+.country .banner-section,
+.heritage .banner-section,
+.interest .banner-section,
+.contact .banner-section{
+    background:url(../images/bg\ events.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom:10rem;
+    min-height:auto;
+    
+}
+
 body{
     color: var(--primary-text);
     font-size: 20px;
@@ -54,44 +69,6 @@ h5,
 h6,
 p {
     margin: 0;
-}
-
-h1 {
-    font-size: 9rem;
-    line-height: 1.4;
-    font-weight: 600;
-    color: var(--primary-text);
-}
-
-h2 {
-    color: var(--primary-text);
-    font-size: 4.7rem;
-    font-weight: 600;
-    display: inline-block;
-    text-transform: capitalize;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-}
-
-h3 {
-    color: var(--text-white);
-    font-size: 3.1rem;
-    line-height: 1.2;
-    font-weight: 700;
-}
-
-h4 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--primary-text);
-}
-
-h5 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1;
-    color: var(--primary-text);
 }
 
 p {
@@ -150,7 +127,6 @@ a:hover{
     
 }
 
-
 .navbar .navbar-nav{
     color:var(--primary-text)
 }
@@ -158,9 +134,17 @@ a:hover{
 
 /*Opening Part*/
 #opening{
-    background:#913b3b00 url(../images/bg\ home\ pt2.jpeg);
+    background:#913b3b00 url(../images/bg\ welcoming.jpeg);
     background-position: center;
     background-size: cover;
+}
+
+.container h1{
+    color: lightcoral;
+}
+
+.container h6{
+    color:indianred;
 }
 
 /*introduction section*/
@@ -210,9 +194,10 @@ a:hover{
     min-height: 100hv;
     width: 50%;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.image{
+.featured-image .image{
     margin: auto;
     width: 380px;
     height:380px;
@@ -234,3 +219,257 @@ a:hover{
         border-radius: 55% 45% 55% 45%;
     }
 }
+
+/*About (my daily life) Section*/
+.section{
+    padding-block: 5rem;
+    background : url(../images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+    
+}
+
+.col{
+    display: flex;
+    width: 50%;
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+
+
+.top-header h2{
+    text-align: center;
+    font-weight: 600;
+    color:rosybrown;
+    margin-bottom: 1rem;
+
+}
+
+.h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.life-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    background: var(--bg-azure);
+    box-shadow: 1px 8px 10px 2px var(--text-gray);
+    border-radius: 20px;
+}
+
+.life-info p{
+    margin-top:1rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/*activites and events*/
+
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    min-height: 100vh; /* Ensure the section takes at least the height of the viewport */
+}
+
+.event .carousel-indicators {
+    bottom: -6rem;
+}
+
+.event .carousel-indicators button {
+    background-color: #F08080;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+
+.event .carousel-item .d-sm-flex .row {
+    align-items: center; /* Center items vertically */
+}
+
+.event .card {
+    background: url(../images/bg\ events.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: right;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 0 .5rem .5rem 0;
+    border: 0.1rem solid transparent;
+    margin: auto;
+    width: 400px;
+    height:380px;
+  
+}
+
+.event .profile-box {
+    padding: 1rem;
+    background-color:rgba(240, 128, 128, 0.425);
+    margin: auto;
+    width: 400px;
+    height:380px;
+}
+
+.event .profile-box img {
+    border-radius: .625rem 3.125rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event .desc-box p{
+    font-size: 20px;
+}
+
+
+
+/*-----------------------------------------------------*/
+/*--CV PART--*/
+
+/*banner*/
+.cv .banner-section h1{
+    margin-left: 5rem;
+    color :#F08080;
+    font-size: 70px;
+}
+
+
+/*text*/
+
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculum-vitae{
+    position:relative;
+    width:100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    display:grid;
+    margin-top:50px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px gray;
+    
+}
+
+.curriculum-vitae .left-side{
+    position: relative;
+    background-color:saddlebrown;
+    padding:40px;
+}
+
+.profile-text{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 20px;
+    border-bottom:5px solid palevioletred
+
+}
+
+.profile-text .imgBx{
+    position:relative;
+    width: 200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.profile-text h5{
+    color:#fff;
+    font-size: 1,5em;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1,5em;
+}
+
+.contact h3,
+.education h3,
+.skills h3{
+    font-weight:700;
+    margin-top: 20px;
+    border-bottom:2px solid palevioletred
+}
+
+.contact .text{
+    font-size:14px;
+    color:#fff;
+}
+
+.education .school{
+    font-weight:500;
+    font-size:15px;
+    color:#fff;
+
+}
+
+.education .degree, .time{
+    font-size:15px;
+}
+
+.skills .language{
+    font-size:14px;
+    color:#fff;
+}
+
+
+
+.curriculum-vitae .right-side{
+    position: relative;
+    background-color: beige;
+    padding:40px;
+}
+
+.profile-info  h3{
+    font-weight:700;
+    margin-top: 20px;
+    border-bottom:2px solid palevioletred
+}
+
+.profile-info p{
+    font-size:15px;
+}
+
+.organization  h3{
+    font-weight:700;
+    margin-top: 20px;
+    border-bottom:2px solid palevioletred
+}
+
+.organization .one h5, 
+.organization .two h5,
+.organization .three h5,
+.organization .four h5{
+    font-weight:500;
+    font-size:20px;
+    color:dimgray;
+    margin-top:15px;
+}
+
+.organization p{
+    font-size:15px;
+}
+
