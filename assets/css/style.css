@@ -682,6 +682,78 @@ a:hover{
 }
 
 
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*--heritage page--*/
+
+/*banner*/
+.heritage .banner-section h1{
+    margin-left: 5rem;
+    color :#F08080;
+    font-size: 70px;
+}
 
 
+.historical .title,
+.cultural .title{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color:#F08080;
 
+}
+
+.historical  .content,
+.cultural  .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.historical  .content .box,
+.cultural  .content .box{
+    width: 340px;
+    margin: 20px;
+    background: url(../images/bg\ events.jpeg);
+    border: 5px solid #f08080a0;
+    box-shadow: 0 5px 35px #8a8686;
+    
+}
+
+.historical  .content .box .image-box,
+.cultural  .content .box .image-box{
+    position: relative;
+    width: 100%;
+    height:300px;
+}
+
+.historical  .content .box .image-box img,
+.cultural  .content .box .image-box img{ 
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.historical  .content .box .text-info,
+.cultural  .content .box .text-info{
+    padding: 15px 0 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.historical  .content .box .text-info h3,
+.cultural  .content .box .text-info h3{
+    color:#000000;
+    font-size: 20px;
+    margin-left: 0.3rem;
+    font-weight: 700;
+
+}
+
+    
