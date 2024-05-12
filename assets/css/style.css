@@ -289,6 +289,17 @@ a:hover{
     min-height: 100vh; /* Ensure the section takes at least the height of the viewport */
 }
 
+.event .top-header h2{
+    margin-top:2rem;
+}
+
+.event .top-header h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
 .event .carousel-indicators {
     bottom: -6rem;
 }
@@ -308,7 +319,7 @@ a:hover{
     background: url(../images/bg\ events.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     text-align: right;
     padding: 2rem 1rem 1rem 1rem;
     border-radius: 0 .5rem .5rem 0;
@@ -336,11 +347,12 @@ a:hover{
 
 .event .desc-box p{
     font-size: 20px;
+
 }
 
 
 
-/*-----------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
 /*--CV PART--*/
 
 /*banner*/
@@ -472,4 +484,204 @@ a:hover{
 .organization p{
     font-size:15px;
 }
+
+
+
+/*---------------------------------------------------------------------------*/
+/*--Country Page--*/
+
+/*banner*/
+.country .banner-section h1{
+    margin-left: 5rem;
+    color :#F08080;
+    font-size: 70px;
+}
+
+.banner-content h5{
+    color:#ea0202;
+    margin-left: 5rem;
+}
+
+/*general information*/
+.indonesia-info h1{
+    font-size: 70px;
+    margin-top:5rem;
+    font-weight: 300;
+    text-align: center;
+    color: #a20000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.indonesia-info p{
+    font-size: 20px;
+    margin-top:0,5rem;
+    font-weight: 500;
+    text-align: center;
+    color:#000000;
+    text-shadow: 2px 2px 4px #a2000081;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    border-top: 5px solid #F08080;
+    font-style: oblique;
+}
+
+/*details*/
+.indonesia-attribute-bg{
+    background-image: url(../images/country\ bg.jpeg);
+    background-size: cover;
+}
+
+
+.details .card{
+    box-shadow: 3px 5px 5px #a20000;
+    border:none;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.details .card img{
+    position: relative;
+}
+
+
+/*travel places*/
+.travel-places .title{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color:#F08080;
+
+}
+
+.travel-places .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.travel-places .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px #8a8686;
+    
+}
+
+.travel-places .content .box .image-box{
+    position: relative;
+    width: 100%;
+    height:300px;
+}
+
+.travel-places .content .box .image-box img{ 
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.travel-places .content .box .text-info 
+{
+    padding: 15px 0 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.travel-places .content .box .text-info h3
+{
+    color:#000000;
+    font-size: 20px;
+    margin-left: 0.3rem;
+    font-weight: 700;
+
+}
+
+.travel-places .content .box .text-info p{
+    margin-top:0.5rem;
+    font-size: 15px;
+}
+
+
+/*pictures*/
+.pictures{
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.pictures .carousel-indicators {
+    bottom: -3rem;
+}
+
+.pictures .carousel-indicators button {
+    background-color: #F08080;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+
+.pictures .carousel-inner {
+    display:flex;
+    justify-content: center;
+
+}
+
+.pictures .carousel-item {
+    align-items: center;
+    max-width: 900px; /* Adjust the maximum width */
+    max-height: 800px; /* Adjust the maximum height */
+    background-image: url(../images/country\ picture\ bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: right;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 0 .5rem .5rem 0;
+    border: 0.1rem solid transparent;
+    margin: auto;
+}
+
+
+.carousel-caption h5{
+    color:#fff;
+    background-color: #a20000;
+    background-position: contain;
+    font-size: 15px;
+    font-family: 500;
+}
+
+.carousel-caption p{
+    background-color:#fff;
+    color: #a20000;
+    font-size: 10px;
+    font-family: 500;
+}
+
+/* Color for control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color:#a20000; /* Set your desired color */
+}
+
+.pictures .more-info h5{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color:#a20000;
+}
+
+
+
+
 
