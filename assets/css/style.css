@@ -131,20 +131,31 @@ a:hover{
     color:var(--primary-text)
 }
 
+.header .nav-link,
+.header .navbar-brand{
+    font-size: 20px;
+    color:#F08080;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 /*Opening Part*/
 #opening{
-    background:#913b3b00 url(../images/bg\ welcoming.png);
+    background:#913b3b00 url(../images/index\ page.jpeg);
     background-position: center;
     background-size: cover;
 }
 
 .container h1{
-    color: lightcoral;
+    color:lemonchiffon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 4px #F08080;
 }
 
 .container h6{
     color:indianred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 8px #F0FFFF;
 }
 
 /*introduction section*/
@@ -274,7 +285,7 @@ a:hover{
 
 /*activites and events*/
 
-.event {
+.homepage .event {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center items vertically */
@@ -494,6 +505,7 @@ a:hover{
     color:#ea0202;
     margin-left: 5rem;
 }
+
 
 /*general information*/
 .indonesia-info h1{
@@ -796,7 +808,7 @@ a:hover{
 }
 
 .content button{
-    font-size: 25px;
+    font-size: 20px;
     background-color: burlywood;
     color:#000000;
     border: none;
@@ -830,12 +842,68 @@ a:hover{
     margin-right: 3rem;
 }
 
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*--interest page--*/
+/*banner*/
+.interest .banner-section h1{
+    margin-left: 5rem;
+    color :#F08080;
+    font-size: 50px;
+}
+
+.interest .search{
+    background-color: antiquewhite;
+    border:2px solid lightslategray;
+    padding:0.5rem 1rem;
+    border-radius: 7px;
+    font-size: 20px;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.interest .movies{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.interest .movie{
+    width: 300px;
+}
+
+.interest img{
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*--login page--*/
+.login-title{
+    margin-top: 8rem;
+}
+
+.login-data label{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    color: #F08080;
+}
+
+.login-data button{
+    font-size: 20px;
+    background-color:#F08080;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.login-data button:hover{
+    background-color:dimgray;
+    
+}
 
 
-
-
-
-
+/*------------------------------------------------------------------------------------------------------------------------*/
 /*responsive*/
 @media screen and (max-width:768px){
     .contact-page{
