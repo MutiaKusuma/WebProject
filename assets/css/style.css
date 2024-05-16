@@ -88,17 +88,6 @@ ul {
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-    outline: 0;
-}
-
-a:hover{
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -138,7 +127,8 @@ a:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+/*-----------------------------------------------------------------------------------*/
+/*--ABOUT PAGE--**/
 /*Opening Part*/
 #opening{
     background:#913b3b00 url(../images/index\ page.jpeg);
@@ -158,71 +148,6 @@ a:hover{
     text-shadow: 2px 2px 8px #F0FFFF;
 }
 
-/*introduction section*/
-.featured-box{
-    position: relative;
-    display: flex;
-    height:100pv;
-    min-height:700pv;
-}
-
-.featured-text{
-    position:relative;
-    display:flex;
-    justify-content: center;
-    align-content:center;
-    min-height: 80pv;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 50px;
-}
-
-
-.featured-name{
-    font-size: 50px;
-    font-weight: 700;
-    color:#000000;
-    margin-block: 20px;
-    margin-top: 5rem;
-}
-
-.featured-text-info{
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.featured-image{
-    display:flex;
-    justify-content: right;
-    align-content: center;
-    min-height: 100hv;
-    width: 50%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.featured-image .image{
-    margin: auto;
-    width: 380px;
-    height:380px;
-    border-radius: 55% 45% 55% 45%;
-    overflow: hidden;
-    animation: imgFloat 7s ease-in-out infinite;
-    
-}
-
-.image img{
-    width:380px;
-    height: 380px;
-    object-fit: cover;
-    
-}
-@keyframes imgFloat{
-    50%{
-        transform: translateY(10px);
-        border-radius: 55% 45% 55% 45%;
-    }
-}
 
 /*About (my daily life) Section*/
 .section{
@@ -240,11 +165,13 @@ a:hover{
     
 }
 
-.col{
+.section .col{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    margin-right: 7rem;
-    margin-left: 7rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 
@@ -253,6 +180,7 @@ a:hover{
     font-weight: 600;
     color:rosybrown;
     margin-bottom: 1rem;
+    font-family :'Times New Roman', Times, serif;
 
 }
 
@@ -282,6 +210,13 @@ a:hover{
     font-size: 15px;
 }
 
+@media (max-width: 768px) {
+    .col {
+        margin-right: 2rem; /* Adjust margin-right for smaller screens */
+        margin-left: 2rem; /* Adjust margin-left for smaller screens */
+    }
+}
+
 
 /*activites and events*/
 
@@ -290,17 +225,14 @@ a:hover{
     flex-direction: column;
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
-    min-height: 100vh; /* Ensure the section takes at least the height of the viewport */
 }
 
 .event .top-header h2{
-    margin-top:2rem;
+    margin-top: 2rem;
 }
-
 .event .top-header h3{
     font-size: 20px;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 
@@ -313,6 +245,7 @@ a:hover{
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
+    font-family :'Times New Roman', Times, serif;
 }
 
 .event .carousel-item .d-sm-flex .row {
@@ -392,7 +325,7 @@ a:hover{
 
 .curriculum-vitae .left-side{
     position: relative;
-    background-color:saddlebrown;
+    background-color:indianred;
     padding:40px;
 }
 
@@ -402,7 +335,7 @@ a:hover{
     flex-direction: column;
     align-items:center;
     padding-bottom: 20px;
-    border-bottom:5px solid palevioletred
+    border-bottom:5px solid #252752;
 
 }
 
@@ -427,7 +360,7 @@ a:hover{
 .skills h3{
     font-weight:700;
     margin-top: 20px;
-    border-bottom:2px solid palevioletred
+    border-bottom:2px solid #252752;
 }
 
 .contact .text{
@@ -478,7 +411,8 @@ a:hover{
 .organization .one h5, 
 .organization .two h5,
 .organization .three h5,
-.organization .four h5{
+.organization .four h5,
+.organization .five h5{
     font-weight:500;
     font-size:20px;
     color:dimgray;
@@ -487,6 +421,19 @@ a:hover{
 
 .organization p{
     font-size:15px;
+}
+
+/* Common styles for both left and right side */
+.profile-info h3,
+.organization h3 {
+    font-weight: 700;
+    margin-top: 20px;
+    border-bottom: 2px solid palevioletred;
+}
+
+.profile-info p,
+.organization p {
+    font-size: 15px;
 }
 
 
@@ -851,6 +798,12 @@ a:hover{
     font-size: 50px;
 }
 
+.interest .search-bar{
+    display: flex;
+    justify-content: center; 
+    margin-top: 2rem;
+}
+
 .interest .search{
     background-color: antiquewhite;
     border:2px solid lightslategray;
@@ -865,15 +818,86 @@ a:hover{
     display:flex;
     flex-wrap:wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .interest .movie{
     width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px grey;
+    background-color: rgba(250, 235, 215, 0.33);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .interest img{
     width: 100%;
 }
+
+.interest .movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.interest .movie-info h3{
+    margin-top: 0;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.interest .overview h3{
+    font-size: 20px;
+    font-weight:300 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.interest span{
+    background-color:#F0FFFF;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.interest span.green{
+    color: lightgreen;
+}
+
+.interest span.orange{
+    color:orange;
+}
+
+.interest span.red{
+    color:#a20000;
+}
+
+.interest .overview{
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgray;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    
+}
+
+.interest .movie:hover .overview{
+    transform: translateY(0);
+
+}
+
+
+
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*--login page--*/
@@ -911,11 +935,53 @@ a:hover{
         flex-direction: column;
     }
 
-    .featured-box{
+    .curriculum-vitae {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+        max-width: 90%;
+        margin: 50px auto;
     }
+
+    .curriculum-vitae .left-side,
+    .curriculum-vitae .right-side {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .curriculum-vitae .left-side {
+        order: 1;
+        background-color:indianred;
+    }
+
+    .curriculum-vitae .right-side {
+        order: 2;
+        background-color: beige;
+    }
+
+    .profile-text {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .profile-text .imgBx {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-text h5 {
+        font-size: 1.2em;
+    }
+
+    .contact .text,
+    .education .school,
+    .skills .language,
+    .organization .one h5,
+    .organization .two h5,
+    .organization .three h5,
+    .organization .four h5,
+    .organization .five h5 {
+        font-size: 13px;
+    }
+
 }
+
