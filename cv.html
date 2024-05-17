@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web Teknolojileri Project</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     
-    <!--CSS-->
+    <!--Custom CSS-->
     <link rel="stylesheet" href = "assets/css/style.css">
 
 </head>
@@ -18,13 +20,16 @@
     <header id="full_nav">
         <div class="header">
           <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">--web--</a>
+                <!-- Brand Icon -->
+                <a class="navbar-brand" href="#"><i class="bi bi-flower3"></i> </a>
+                <!-- Toggle Button for Mobile View -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="bi bi-list navbar-toggler-icon"></i>
+                 <i class="bi bi-list"></i>
                 </button>
+                <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto" >
                     <li class="nav-item">
@@ -45,150 +50,155 @@
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact Me</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Log in <i class="bi bi-box-arrow-in-right"></i></a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </nav>
           </div>
         </div>
-      </header>
+    </header>
 
-      
-<!--banner-->
-
+ <!-- BANNER -->
 <section class="banner-section">
     <div class="banner-content">
-        <h1>Curriculum Vitae</h1>
+        <h1>Curriculum<br> Vitae</h1>
     </div>
 </section>
 
+ <!-- MAIN CONTENT -->
 <main class="wrapper">
-  
-    
-    <!--text-->
+    <!-- Curriculum Vitae Section -->
     <section class="curriculum-vitae">
-            <div class="left-side">
-                <div class="profile-text">
-                    <div class="imgBx">
-                        <img src="assets/images/pass foto.JPG">
-                    </div>
-                    <h5><br>MUTIA MAHARANI KUSUMA<br><br><span>Computer Engineering Student</span></h5>
+         <!-- Left Side -->
+        <div class="left-side">
+            <!-- Profile -->
+            <div class="profile-text">
+                <!-- Profile Image -->
+                <div class="imgBx">
+                   <img src="assets/images/pass foto.JPG">
                 </div>
-
-                <div class="contact">
-                    <h3>CONTACT</h3>
-                    <ul class="contact-text">
-                        <li>
-                            <span class="icon"><i class="bi bi-telephone-fill"></i></span>
-                            <span class="text">+90 506 595 35 03</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="bi bi-envelope-at-fill"></i></span>
-                            <span class="text">mutiamharani@gmail.com</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="bi bi-geo-alt-fill"></i></span>
-                            <span class="text">Sakarya, Turkiye</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="education">
-                    <h3>EDUCATION</h3>
-                    <ul class="contact-text">
-                        <li>
-                            <span class="icon"><i class="bi bi-caret-right-fill"></i></i></span>
-                            <span class="school">SMAN1 PALEMBANG</span>
-                            <span class="degree"><br>Science</span>
-                            <span class="time"><br>2018-2021</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="bi bi-caret-right-fill"></i></i></span>
-                            <span class="school">Sakarya Univesity</span>
-                            <span class="degree"><br>Computer Engineering</span>
-                            <span class="time"><br>2023-Now</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skills">
-                    <h3>LANGUANGE SKILLS</h3>
-                    <ul>
-                        <li>
-                            <span class="language">Indonesia</span>
-                            <span class="icon"><i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i></span>
-                        </li>
-                        <li>
-                            <span class="language">Indonesia</span>
-                            <span class="icon"><i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i></span>
-                        </li>
-                        <li>
-                            <span class="language">Indonesia</span>
-                            <span class="icon"><i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i></span>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Profile Text -->
+                <h5><br>MUTIA MAHARANI KUSUMA<br><br><span>Computer Engineering Student</span></h5>
             </div>
 
+            <!-- Contact Information -->
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <!-- Contact Details -->
+                <ul class="contact-text">
+                    <li>
+                        <span class="icon"><i class="bi bi-telephone-fill"></i></span>
+                        <span class="text">+90 506 595 35 03</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="bi bi-envelope-at-fill"></i></span>
+                        <span class="text">mutiamharani@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="bi bi-geo-alt-fill"></i></span>
+                        <span class="text">Sakarya, Turkiye</span>
+                    </li>
+                </ul>
+            </div>
 
-            <div class="right-side">
-                <div class="profile-info">
-                    <h3>PROFILE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Cras pellentesque aliquet malesuada. Vestibulum eu diam sem. 
-                        Etiam iaculis eget diam in laoreet. Aliquam gravida turpis vitae lacinia sagittis. 
-                        Nulla sed sagittis eros. Mauris ut neque pellentesque, molestie lectus vitae, placerat ipsum. 
-                        Phasellus ut tortor orci.
-                    </p>
+            <!-- Education -->
+            <div class="education">
+                <h3>EDUCATION</h3>
+                <!-- Education Details -->
+                <ul class="contact-text">
+                    <li>
+                        <span class="icon"><i class="bi bi-caret-right-fill"></i></i></span>
+                        <span class="school">SMAN1 PALEMBANG</span>
+                        <span class="degree"><br>Science</span>
+                        <span class="time"><br>2018-2021</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="bi bi-caret-right-fill"></i></i></span>
+                        <span class="school">Sakarya Univesity</span>
+                        <span class="degree"><br>Computer Engineering</span>
+                        <span class="time"><br>2023-Now</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Language Skills -->
+            <div class="skills">
+                <h3>LANGUANGE SKILLS</h3>
+                <ul>
+                    <li>
+                        <span class="language">Indonesia</span>
+                        <span class="icon"><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i></span>
+                    </li>
+                    <li>
+                        <span class="language">Indonesia</span>
+                        <span class="icon"><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i></span>
+                    </li>
+                    <li>
+                        <span class="language">Indonesia</span>
+                        <span class="icon"><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+         <!-- Right Side -->
+        <div class="right-side">
+            <!-- Profile Information -->
+            <div class="profile-info">
+                <!-- Profile Description -->
+                <h3>PROFILE</h3>
+                <p>"You don't have to be great to start, but you have to start to be great" 
+                    is a principle that I hold to this day. To know our strengths and become 
+                    a superior person, we must do something first. 
+                    I am someone who is hardworking, responsible, and also active. 
+                    I am very passionate about communication and public speaking. 
+                    I also like volunteer activities, where 
+                    I can help many people and influence them in a positive way.
+                </p>
+            </div>
+
+            <!-- Organization Experience -->
+            <div class="organization">
+                <h3>ORGANIZATION EXPERIENCE</h3>
+                <!-- Organization Details -->
+                <div class="one">
+                    <h5>Students Council of Junior High School</h5>
+                    <p>-Being part of the Students Council in Junior High School.</p>
                 </div>
-
-                <div class="organization">
-                    <h3>ORGANIZATION EXPERIENCE</h3>
-                    <div class="one">
-                        <h5>Students Council of Junior High School</h5>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                    </div>
-                    <div class="two">
-                        <h5>Students Council of Junior High School</h5>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                    </div>
-                    <div class="three">
-                        <h5>Students Council of Junior High School</h5>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                    </div>
-                    <div class="four">
-                        <h5>Students Council of Junior High School</h5>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                        <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Cras pellentesque aliquet malesuada.</p>
-                    </div>
+                <div class="two">
+                    <h5>English Club</h5>
+                    <p>-Became the main treasurer of the English Club at Senior High School.</p>
+                    <p>-Actively participated in competitions and events organized 
+                        by other schools as a representative in the speech branch.</p>
+                </div>
+                <div class="three">
+                    <h5>Indonesia Millenial Connect Palembang</h5>
+                    <p>-Part of the Social Department by doing some of social activities</p>
+                    <p>-Regularly hold some events that related on helping each other.</p>
+                    <p>-Succesfull on helding an event at a school with “Study or Work?” theme.</p>
+                </div>
+                <div class="four">
+                    <h5>PPI Sakarya</h5>
+                    <p>-Part of Advocate Dapartment by helping Indonesia students in Sakarya.</p>
+                    <p>-In charge to be an admin for call center.</p>
                 </div>
             </div>
+        </div>
     </section>
     
 </main>
-
-
-
 
     <!--Bootstrap-->
     <script src = "	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

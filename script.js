@@ -78,3 +78,14 @@ const search = document.getElementById('search');
         getMovies(API_URL);
     }
   })
+  
+
+/*---------------------------------------------------------------------------*/ 
+//LOGIN PAGE
+  // JavaScript to show the message box when there is a message to display
+  window.onload = function() {
+      var messageBox = document.getElementById('message-box');
+      if (messageBox.innerHTML.trim() !== '') {
+          messageBox.style.display = 'block';
+      }
+  };
