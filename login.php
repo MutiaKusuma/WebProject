@@ -139,7 +139,7 @@ if(isset($_POST['email'])){
                     <!-- <label for="name">Surname:</label> -->
                     <label for="password">Password:</label><br>
                     <input type="text" id="password" name="password"  class="form-control" placeholder="ex: b221210590"  required>                          </div>
-                                  <!-- Submit Button -->
+                  <!-- Submit Button -->
                 <div class="form-group d-grid">
                     <button type="submit" id="submit-btn" class="button-login">LOG IN</button>
                 </div>
